@@ -1,2 +1,35 @@
+* {
+  margin: 0; }
+
+.header {
+  background: grey;
+  background-image: url(../assets/images/cover.jpg);
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header__hamburger {
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 15px 14px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .header__title {
+    margin: 240px 0 10px 15px;
+    color: #ffffff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: RobotoSlab;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center; }
+  .header__text {
+    margin: 10px 0 45px 15px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */
