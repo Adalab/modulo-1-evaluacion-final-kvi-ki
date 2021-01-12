@@ -11,9 +11,11 @@
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Otra página del starter kit</h1>
+      <header class="header" id="header">
+          <a href="https://adalab.es/" title="Menu" class="header__hamburger"><img src="../assets/images/ico-menu.svg" alt="menu-icon"></a>
+          <h1 class="header__title">anonymous<br>proxy</h1>
+          <h3 class="header__text">In hac habitasse platea dictumst.</h3>
+          <a class="header__arrow" href="#reasons" title="Go to 3 Reasons To Purchase section"><img src="../assets/images/ico-scroll-down.svg" alt="scroll-down-icon"></a>
       </header>
 
       <main>
@@ -23,12 +25,32 @@
           que te ha traído hasta aquí.
         </p>
       </main>
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <footer class="footer">
 
-        </small>
+          <a class="footer__arrow" href="#header" title="Go to the top"><img src="../assets/images/ico-arrow.svg" alt="arrow-icon"></a>
+
+          <nav class="footer__list">
+            <ul class="footer__list--type">
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Articles">articles</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Books">books</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Events">events</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Reasons">reasons</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Tips">tips</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__list">
+            <ul class="footer__list--type">
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Twitter">twitter</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Instagram">instagram</a></li>
+              <li><a class="footer-link" href="https://adalab.es/" title="Go to Mastodon.social">mastodon.social</a></li>
+            </ul>
+          </nav>
+        
+        <div class="footer__copy">&copy;2017</div>
+
+        <div class="footer__heart">we <span class="footer__heart--orange">&#10084;</span> components</div>
+
       </footer>
 
     </div>
