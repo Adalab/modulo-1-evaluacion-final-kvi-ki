@@ -1,1 +1,42 @@
+.header {
+    background-image: url(../images/cover.jpg);
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__hamburger {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        width: 44px;
+        height: 44px;
+        padding: 15px 14px;
+        background-color: #0271bc;
+        z-index: 1000;
+    }
+    &__title {
+        margin: 240px 0 10px 15px;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        @include t($titleFont, 42px, $textWhite);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__text {
+        margin: 10px 0 45px 15px;
+        @include t($textFont, 16px, $textWhite);
+    }
+    &__arrow {
+        width: 45px;
+        height: 45px; 
+        background-color: $arrowBackground;
+        border-radius: 22.5px;
+        box-sizing: border-box;
+        padding: 18px 12px 15.3px 13px;
+        text-decoration: none;
+        // margin: 45px 122px 0 94px;
+    }
+}
 

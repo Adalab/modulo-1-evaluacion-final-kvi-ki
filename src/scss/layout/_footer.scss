@@ -1,0 +1,47 @@
+.footer {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+//   margin: -30px 0 -30px 0;
+  padding: 40px 15px 45px;
+  background-color: #304268;
+    &__arrow {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        top: -60px;
+        padding: 11px 12.4px 10px 12px;
+        border-radius: 22.5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        background-color: $arrowBackground;
+        color: $arrowOrange;
+    }
+    &__list {
+        margin: 0 0 30px 0;
+        &--type {
+            box-sizing: border-box;
+            padding: 0; 
+            list-style-type: none;
+            text-align: center;
+        }
+    }
+    &__copy {
+       @include t($listFont, 14px, #ffffff);  
+    }
+    &__heart {
+        @include t($textFont, 14px, $textWhite);
+        &--orange {
+            color: $buttonOrange;
+        }
+    }
+}
+
+.footer-link {
+    text-decoration: none;
+    @include t($listFont, 16px, $listColor);
+    text-transform: uppercase;
+}

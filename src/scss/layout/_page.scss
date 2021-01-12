@@ -1,0 +1,100 @@
+.main {
+    // height: 1061px;
+    // padding: 60px 15px 45px;
+}
+
+.section1 {
+    background-color: $backgroundWhite;
+    // margin: 568px 0 0;
+    padding: 30px 15px 45px;
+        &__small {
+        @include t('Roboto', 14px, #8ccbea);
+        margin: 0 200px 1px 0;
+        line-height: 2.14;
+        }
+        &__title {
+            @include t($titleFont, 24px, $titleBlack);
+            text-transform: capitalize;
+            margin: 1px 0 15px;
+            line-height: 1.25;
+        }
+        &__text {
+            @include t($textFont, 18px, $textGreyish);
+            line-height: 1.67;
+            margin: 15px 0 30px;
+        }
+        &__button {
+            text-transform: capitalize;
+            width: 76px;
+            height: 45px;
+            // margin: 30px 214px 0 0;
+            padding: 0 25px 0 26px;
+            border-radius: 22.5px;
+            border: solid 2px $buttonBorder;
+            background-color: $backgroundButton;
+            transition: background-color ease 0.6s;
+            &:hover {
+                background-color: #f7d1b9;
+            }
+            &--simple {
+                text-decoration: none;
+                @include t($buttonFont, 20px, $buttonOrange);
+            }
+        }
+}
+
+.section2 {
+    // margin: 376px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px 60px;
+    background-color: #eff9ff;
+    &__title {
+        @include t($titleFont, 24px, $titleBlack);
+        text-transform: capitalize;
+        margin: 0 0 45px;
+        line-height: 1.25;
+    }
+    &__button {
+        width: 184px;
+        height: 45px;
+        background-color: #f26002;
+        border-radius: 22.5px;
+        border: none;
+        // margin: 45px 53px 0;
+        padding: 0 29.5px 0 30.5px;
+        transition: height width ease 1s, background-color ease 1s;
+        &:hover {
+            height: 55px;
+            width: 194px;
+            background-color: #f14907;
+        }
+        &--simple {
+            text-decoration: none;
+            @include t($buttonFont, 20px, $buttonText);
+        }
+    }
+}
+
+.section2__button:first-letter {
+    text-transform: capitalize;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    &__text {
+        @include t($titleFont, 18px, $titleBlack);
+        font-weight: bold;
+        text-align: center;
+        &--normal {
+            @include t($textFont, 18px, $textBlack);
+            margin: 0 0 45px 0;
+            width: 180px;
+        }
+    }
+}    

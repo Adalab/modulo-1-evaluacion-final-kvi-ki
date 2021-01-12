@@ -1,64 +1,9 @@
-// @import 'core/variables';
-// @import 'core/reset';
-// @import 'components/code';
-// @import 'components/links';
-// @import 'layout/page';
-// @import 'layout/header';
-// @import 'layout/footer';
-// @import 'pages/index';
-
-// variables
-$titleWhite: #ffffff;
-$textWhite: #ffffff;
-$listColor: #ffffff;
-$titleBlack: #000000;
-$textBlack: #000000;
-$titleFont: RobotoSlab;
-$textFont: Roboto;
-$buttonFont: Roboto;
-$listFont: Roboto;
-
-* {
-    margin: 0;
-}
-.header {
-    background: grey;
-    background-image: url(../assets/images/cover.jpg);
-    height: 568px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    // background-blend-mode: multiply;
-    // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 25%, var(--k));
-    &__hamburger {
-        width: 44px;
-        height: 44px;
-        box-sizing: border-box;
-        padding: 15px 14px;
-        background-color: blue;
-        position: fixed;
-        top: 0;
-        left: 0;
-        &--link{
-            
-        }
-    }
-    &__title {
-        margin: 240px 0 10px 15px;
-        color: $textWhite;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-        font-family: $titleFont;
-        font-size: 42px;
-        text-transform: uppercase;
-        text-align: center;
-
-    }
-    &__text {
-        margin: 10px 0 45px 15px;
-        color: $textWhite;
-        font-family: $textFont;
-        font-size: 16px;
-    }
-}
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/mixins';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
