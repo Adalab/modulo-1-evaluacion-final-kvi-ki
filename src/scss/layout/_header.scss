@@ -31,7 +31,7 @@
         text-align: center;
         @media all and (min-width: 768px) {
             font-size: 80px;
-            margin: 340px 0 20px 39px;
+            margin: 384px 39px 20px 39px;
         }
         @media all and (min-width: 1280px) {
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -44,6 +44,7 @@
         @include t($textFont, 16px, $textWhite);
         @media all and (min-width: 768px) {
             font-size: 24px;
+            margin: 0px 204px 30px 204px;
         }
         @media all and (min-width: 1280px) {
              

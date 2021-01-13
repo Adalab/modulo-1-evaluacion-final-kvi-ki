@@ -1,6 +1,10 @@
 .section1 {
     background-color: $backgroundWhite;
     padding: 30px 15px 45px;
+    @media all and (min-width: 768px) {
+        margin: 30px 60px 60px 39px;
+        padding: 0;
+    }
     @media all and (min-width: 1280px) {
         padding: 60px 275px;
     }
@@ -69,8 +73,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 15px 60px;
+    padding: 30px 15px 10px;
     background-color: #eff9ff;
+    @media all and (min-width: 768px) {
+        padding: 30px 0px 10px;
+    }
     &__title {
         @include t($titleFont, 24px, $titleBlack);
         text-transform: capitalize;
@@ -120,7 +127,7 @@
         width: 45px;
         height: 45px;
         position: relative;
-        bottom: -85px;
+        bottom: -35px;
         padding: 11px 12.4px 10px 12px;
         border-radius: 22.5px;
         box-sizing: border-box;

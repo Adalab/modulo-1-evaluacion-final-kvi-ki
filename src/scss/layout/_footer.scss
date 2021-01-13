@@ -8,6 +8,11 @@
   @media all and (min-width: 768px) {
       flex-direction: row;
       justify-content: space-around;
+      align-items: flex-start;
+      padding: 45px 39px 45px 39px;
+  }
+  @media all and (min-width: 1280px) {
+      justify-content: center;
   }
     &__list {
         margin: 0 0 30px 0;
@@ -16,15 +21,30 @@
             padding: 0; 
             list-style-type: none;
             text-align: center;
+            @media all and (min-width: 768px) {
+                text-align: left;
+                width: 210px;
+            }
+            @media all and (min-width: 1280px) {
+                width: 159px;
+            }
         }
     }
     &__end {
         @media all and (min-width: 768px) {
             order: 0;
+            width: 210px;
+        }
+        @media all and (min-width: 1280px) {
+            width: 159px;
+            padding-right: 30px;
         }
         &--copy {
             @include t($listFont, 14px, #ffffff);  
             text-align: center;
+            @media all and (min-width: 768px) {
+                text-align: left;
+            }
         }
         &--heart {
             @include t($listFont, 14px, $listColor);

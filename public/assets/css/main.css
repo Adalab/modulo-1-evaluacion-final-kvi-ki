@@ -1,6 +1,10 @@
 .section1 {
   background-color: #ffffff;
   padding: 30px 15px 45px; }
+  @media all and (min-width: 768px) {
+    .section1 {
+      margin: 30px 60px 60px 39px;
+      padding: 0; } }
   @media all and (min-width: 1280px) {
     .section1 {
       padding: 60px 275px; } }
@@ -70,8 +74,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 15px 60px;
+  padding: 30px 15px 10px;
   background-color: #eff9ff; }
+  @media all and (min-width: 768px) {
+    .section2 {
+      padding: 30px 0px 10px; } }
   .section2__title {
     font-family: "Roboto Slab", serif;
     font-size: 24px;
@@ -119,7 +126,7 @@
     width: 45px;
     height: 45px;
     position: relative;
-    bottom: -85px;
+    bottom: -35px;
     padding: 11px 12.4px 10px 12px;
     border-radius: 22.5px;
     box-sizing: border-box;
@@ -202,7 +209,7 @@
     @media all and (min-width: 768px) {
       .header__title {
         font-size: 80px;
-        margin: 340px 0 20px 39px; } }
+        margin: 384px 39px 20px 39px; } }
     @media all and (min-width: 1280px) {
       .header__title {
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -215,7 +222,8 @@
     color: #ffffff; }
     @media all and (min-width: 768px) {
       .header__text {
-        font-size: 24px; } }
+        font-size: 24px;
+        margin: 0px 204px 30px 204px; } }
   .header__arrow {
     width: 45px;
     height: 45px;
@@ -235,7 +243,12 @@
   @media all and (min-width: 768px) {
     .footer {
       flex-direction: row;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 45px 39px 45px 39px; } }
+  @media all and (min-width: 1280px) {
+    .footer {
+      justify-content: center; } }
   .footer__list {
     margin: 0 0 30px 0; }
     .footer__list--type {
@@ -243,14 +256,29 @@
       padding: 0;
       list-style-type: none;
       text-align: center; }
+      @media all and (min-width: 768px) {
+        .footer__list--type {
+          text-align: left;
+          width: 210px; } }
+      @media all and (min-width: 1280px) {
+        .footer__list--type {
+          width: 159px; } }
   @media all and (min-width: 768px) {
     .footer__end {
-      order: 0; } }
+      order: 0;
+      width: 210px; } }
+  @media all and (min-width: 1280px) {
+    .footer__end {
+      width: 159px;
+      padding-right: 30px; } }
   .footer__end--copy {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #ffffff;
     text-align: center; }
+    @media all and (min-width: 768px) {
+      .footer__end--copy {
+        text-align: left; } }
   .footer__end--heart {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
