@@ -49,14 +49,14 @@
             padding: 0 25px 0 26px;
             border-radius: 22.5px;
             border: solid 2px $buttonBorder;
-            background-color: $backgroundButton;
+            background-color: $backgroundButtonWhite;
             transition: background-color ease 0.6s;
             &:hover {
                 background-color: #f7d1b9;
             }
             &--simple {
                 text-decoration: none;
-                @include t($buttonFont, 20px, $buttonOrange);
+                @include t($buttonFont, 20px, $buttonFontOrange);
             }
             @media all and (min-width: 768px) {
                 width: 91px;
@@ -94,7 +94,7 @@
     &__button {
         width: 184px;
         height: 45px;
-        background-color: #f26002;
+        background-color: $backgroundButtonOrange;
         border-radius: 22.5px;
         border: none;
         padding: 0 29.5px 0 30.5px;
@@ -157,13 +157,16 @@
         @include t($titleFont, 18px, $titleBlack);
         font-weight: bold;
         text-align: center;
+        line-height: 1.67;
         @media all and (min-width: 768px) {
             font-size: 24px;
+            line-height: 1.25;
         }
         &--normal {
             @include t($textFont, 18px, $textBlack);
             margin: 0 0 45px 0;
             width: 180px;
+            line-height: 1.67;
             @media all and (min-width: 768px) {
                 font-size: 20px;
                 width: 212.3px;
