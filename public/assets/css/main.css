@@ -10,7 +10,8 @@
       padding: 0; } }
   @media all and (min-width: 1280px) {
     .section1 {
-      padding: 60px 275px; } }
+      padding: 60px 275px;
+      margin: 0; } }
   .section1__small {
     font-family: "Roboto";
     font-size: 14px;
@@ -136,7 +137,31 @@
     text-decoration: none;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
-    color: #f26002; }
+    color: #f26002;
+    -webkit-animation-name: jump;
+    animation-name: jump;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes jump {
+  from {
+    bottom: -35px;
+    transform: rotate(90deg); }
+  to {
+    bottom: -33.5px;
+    transform: rotate(0deg); } }
+
+@keyframes jump {
+  from {
+    bottom: -35px;
+    transform: rotate(90deg); }
+  to {
+    bottom: -33.5px;
+    transform: rotate(0deg); } }
 
 .section2__button:first-letter {
   text-transform: capitalize; }
@@ -305,11 +330,11 @@
   line-height: 1.88; }
 
 @media all and (min-width: 768px) {
-  .flex {
+  .articles {
     order: 1; } }
 
 @media all and (min-width: 768px) {
-  .media {
+  .social {
     order: 2; } }
 
 /*# sourceMappingURL=main.css.map */

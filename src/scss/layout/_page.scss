@@ -7,6 +7,7 @@
     }
     @media all and (min-width: 1280px) {
         padding: 60px 275px;
+        margin: 0;
     }
         &__small {
         @include t('Roboto', 14px, #8ccbea);
@@ -135,6 +136,20 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         background-color: $arrowBackground;
         color: $arrowOrange;
+        animation-name: jump;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes jump {
+            from {
+                bottom: -35px;
+                transform: rotate(90deg);
+            }
+            to {
+                bottom: -33.5px;
+                transform: rotate(0deg);
+            }
+        }
     }
 }
 

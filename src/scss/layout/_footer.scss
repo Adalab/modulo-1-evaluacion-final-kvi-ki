@@ -64,13 +64,13 @@
     line-height: 1.88;
 }
 
-.flex {
+.articles {
     @media all and (min-width: 768px) {
         order: 1;
     }
 }
 
-.media {
+.social {
     @media all and (min-width: 768px) {
         order: 2;
     }
