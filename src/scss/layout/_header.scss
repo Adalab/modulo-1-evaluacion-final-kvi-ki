@@ -60,5 +60,9 @@
         box-sizing: border-box;
         padding: 18px 12px 15.3px 13px;
         text-decoration: none;
+        visibility: hidden;
+        @media all and (min-width: 768px) {
+            visibility: visible;
+        }
     }
 }

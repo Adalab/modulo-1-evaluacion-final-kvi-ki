@@ -4,6 +4,9 @@
     @media all and (min-width: 768px) {
         margin: 30px 60px 60px 39px;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+
     }
     @media all and (min-width: 1280px) {
         padding: 60px 275px;
@@ -13,6 +16,9 @@
         @include t('Roboto', 14px, #8ccbea);
         margin: 0 200px 1px 0;
         line-height: 2.14;
+        @media all and (min-width: 768px) {
+            order: 1;
+        }
             @media all and (min-width: 1280px) {
                 font-size: 16px;
                 line-height: 1.88;
@@ -26,6 +32,7 @@
             @media all and (min-width: 768px) {
                 font-size: 26px;
                 margin: 0 0 30px 0;
+                order: 0;
             }
             @media all and (min-width: 1280px) {
                 font-size: 32px;
@@ -35,9 +42,11 @@
         &__text {
             @include t($textFont, 18px, $textGreyish);
             line-height: 1.67;
-            margin: 15px 0 30px;
+            margin: 15px 0 50px;
             @media all and (min-width: 768px) {
                 font-size: 20px;
+                margin: 15px 0 30px;
+                order: 2;
             }
             @media all and (min-width: 1280px) {
                 margin-top: 0;
@@ -50,18 +59,19 @@
             padding: 0 25px 0 26px;
             border-radius: 22.5px;
             border: solid 2px $buttonBorder;
-            background-color: $backgroundButtonWhite;
+            background-color: $backgroundButtonOrange;
             transition: background-color ease 0.6s;
             &:hover {
                 background-color: #f7d1b9;
             }
             &--simple {
                 text-decoration: none;
-                @include t($buttonFont, 20px, $buttonFontOrange);
+                @include t($buttonFont, 20px, $buttonText);
             }
             @media all and (min-width: 768px) {
                 width: 91px;
                 padding: 0 32.5px 0 33.5px;
+                order: 3;
             }
             @media all and (min-width: 1280px) {
                 width: 160px;

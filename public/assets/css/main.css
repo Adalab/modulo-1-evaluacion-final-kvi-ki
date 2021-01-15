@@ -7,7 +7,9 @@
   @media all and (min-width: 768px) {
     .section1 {
       margin: 30px 60px 60px 39px;
-      padding: 0; } }
+      padding: 0;
+      display: flex;
+      flex-direction: column; } }
   @media all and (min-width: 1280px) {
     .section1 {
       padding: 60px 275px;
@@ -18,6 +20,9 @@
     color: #8ccbea;
     margin: 0 200px 1px 0;
     line-height: 2.14; }
+    @media all and (min-width: 768px) {
+      .section1__small {
+        order: 1; } }
     @media all and (min-width: 1280px) {
       .section1__small {
         font-size: 16px;
@@ -32,7 +37,8 @@
     @media all and (min-width: 768px) {
       .section1__title {
         font-size: 26px;
-        margin: 0 0 30px 0; } }
+        margin: 0 0 30px 0;
+        order: 0; } }
     @media all and (min-width: 1280px) {
       .section1__title {
         font-size: 32px;
@@ -42,10 +48,12 @@
     font-size: 18px;
     color: #4a4a4a;
     line-height: 1.67;
-    margin: 15px 0 30px; }
+    margin: 15px 0 50px; }
     @media all and (min-width: 768px) {
       .section1__text {
-        font-size: 20px; } }
+        font-size: 20px;
+        margin: 15px 0 30px;
+        order: 2; } }
     @media all and (min-width: 1280px) {
       .section1__text {
         margin-top: 0; } }
@@ -56,7 +64,7 @@
     padding: 0 25px 0 26px;
     border-radius: 22.5px;
     border: solid 2px #f26002;
-    background-color: #ffffff;
+    background-color: #f26002;
     transition: background-color ease 0.6s; }
     .section1__button:hover {
       background-color: #f7d1b9; }
@@ -64,11 +72,12 @@
       text-decoration: none;
       font-family: "Roboto", sans-serif;
       font-size: 20px;
-      color: #f26002; }
+      color: #ffffff; }
     @media all and (min-width: 768px) {
       .section1__button {
         width: 91px;
-        padding: 0 32.5px 0 33.5px; } }
+        padding: 0 32.5px 0 33.5px;
+        order: 3; } }
     @media all and (min-width: 1280px) {
       .section1__button {
         width: 160px;
@@ -264,7 +273,11 @@
     border-radius: 22.5px;
     box-sizing: border-box;
     padding: 18px 12px 15.3px 13px;
-    text-decoration: none; }
+    text-decoration: none;
+    visibility: hidden; }
+    @media all and (min-width: 768px) {
+      .header__arrow {
+        visibility: visible; } }
 
 .footer {
   display: flex;
